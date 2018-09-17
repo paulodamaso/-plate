@@ -1,2 +1,2 @@
-# -plate
-Mercosul plate conversion
+# plate
+Mercosul plate conversion from Brazilian vehicle plates
