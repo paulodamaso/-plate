@@ -10,7 +10,7 @@ Mercosul plate conversion from Brazilian vehicle plates
     - [x] Write converted plate in `TextView`
 - [ ] Advanced features
     - [ ] Read plate from image (OCR)
-    - [ ] Create converted plate image
+    - [ ] Create converted plate image (http://www.denatran.gov.br/images/Resolucoes/Resolucao5902016.pdf)
         - [ ] Simple plate image
         - [ ] Details
             - [ ] QR code
