@@ -6,23 +6,24 @@
         android:layout_height="match_parent"
         tools:context=".MercosulPlates" android:layout_width="match_parent">
 
+    <ImageView
+            android:layout_height="wrap_content" app:srcCompat="@drawable/new_plate_background" android:id="@+id/plate_bg" app:layout_constraintEnd_toEndOf="parent" android:layout_width="wrap_content" android:visibility="invisible" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="84dp" app:layout_constraintHorizontal_bias="1.0"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/old_plate_label"
-            android:layout_marginLeft="16dp" app:layout_constraintHorizontal_bias="0.722" android:textSize="30sp" android:textAlignment="center" android:id="@+id/old_plate_label" app:layout_constraintStart_toStartOf="@+id/old_plate_text" app:layout_constraintEnd_toEndOf="@+id/old_plate_text" android:layout_marginEnd="15dp" app:layout_constraintTop_toTopOf="@+id/guideline" app:layout_constraintBottom_toTopOf="@+id/old_plate_text" app:layout_constraintVertical_bias="0.847" android:layout_marginTop="8dp"/>
+            android:layout_marginLeft="16dp" app:layout_constraintHorizontal_bias="0.694" android:textSize="30sp" android:textAlignment="center" android:id="@+id/old_plate_label" app:layout_constraintStart_toStartOf="@+id/old_plate_text" app:layout_constraintEnd_toEndOf="@+id/old_plate_text" android:layout_marginEnd="15dp" app:layout_constraintTop_toTopOf="@+id/guideline" app:layout_constraintBottom_toTopOf="@+id/old_plate_text" app:layout_constraintVertical_bias="0.933" android:layout_marginTop="8dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:id="@+id/old_plate_text" android:inputType="text" app:layout_constraintStart_toStartOf="@+id/convert_button" app:layout_constraintEnd_toEndOf="@+id/convert_button" app:layout_constraintHorizontal_bias="0.504" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="139dp" android:layout_marginBottom="62dp" app:layout_constraintBottom_toTopOf="@+id/new_plate_label"/>
+            android:id="@+id/old_plate_text" android:inputType="text" app:layout_constraintStart_toStartOf="@+id/plate_bg" app:layout_constraintEnd_toEndOf="@+id/plate_bg" app:layout_constraintHorizontal_bias="0.503" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="124dp"/>
     <Button
             android:text="@string/convert_button_label"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/convert_button" app:layout_constraintStart_toStartOf="@+id/new_plate_label" app:layout_constraintEnd_toEndOf="@+id/new_plate_label" app:layout_constraintTop_toBottomOf="@+id/old_plate_text" app:layout_constraintBottom_toTopOf="@+id/new_plate_label" app:layout_constraintVertical_bias="0.632" android:onClick="convert"/>
+            android:layout_height="wrap_content" android:id="@+id/convert_button" android:onClick="convert" app:layout_constraintBottom_toTopOf="@+id/plate_bg" android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/old_plate_text" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
-            android:layout_width="210dp"
-            android:layout_height="0dp" android:id="@+id/new_plate_label" android:textAppearance="@style/TextAppearance.AppCompat.Caption" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="192dp" app:layout_constraintTop_toBottomOf="@+id/old_plate_text" android:textSize="36sp"/>
-    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/guideline" app:layout_constraintGuide_begin="21dp" android:orientation="horizontal"/>
+            android:layout_height="wrap_content" android:id="@+id/new_plate_label" android:textAppearance="@style/TextAppearance.AppCompat.Caption" android:textSize="36sp" android:layout_width="0dp" android:layout_marginTop="44dp" app:layout_constraintTop_toTopOf="@+id/plate_bg" android:textAlignment="center" android:visibility="invisible" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="34dp" android:layout_marginEnd="34dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/guideline" app:layout_constraintGuide_begin="-1dp" android:orientation="horizontal" app:layout_constraintStart_toStartOf="@+id/old_plate_label" app:layout_constraintEnd_toEndOf="@+id/old_plate_label"/>
 
 </android.support.constraint.ConstraintLayout>
