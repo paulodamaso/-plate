@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mercosul Plates</string>
+    <string name="old_plate_label">Minha Placa</string>
+    <string name="convert_button_label">Converter</string>
+</resources>
